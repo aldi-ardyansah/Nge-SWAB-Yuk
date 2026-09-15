@@ -3,14 +3,14 @@
 
     if (
         !isset($_SESSION["NIK"], $_SESSION["Access"]) ||
-        $_SESSION["Access"] !== "Administrator"
+        $_SESSION["Access"] !== "User"
     ) {
         header("Location: index.php");
         exit;
     }
 
     if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-        header("Location: admin_b_swab_a_zone-1.php");
+        header("Location: user_b_swab_a_zone-1.php");
         exit;
     }
 
@@ -39,6 +39,6 @@
         WHERE ID = '$POST_ID'"
     );
 
-    header("Location: admin_b_swab_a_zone-1.php");
+    header("Location: user_b_swab_a_zone-1.php");
     exit;
 ?>

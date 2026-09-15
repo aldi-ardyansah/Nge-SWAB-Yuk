@@ -61,7 +61,7 @@
         </nav>
 
 <div class="container-fluid p-4" style="background-color: rgb(255 255 255);">
-            <h2 class="text-center mb-4">SWAB Zona 1</h2>
+            <h2 class="text-center mb-4">SWAB Zone 1</h2>
             <hr>
             <div class="d-flex justify-content-end mb-3">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSWABZone1">
@@ -79,6 +79,7 @@
                             <th scope="col">TPC (100 CFU/100 cm²)</th>
                             <th scope="col">Enterobacteriaceae (10 CFU/100 cm²)</th>
                             <th scope="col">Notes</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -103,7 +104,7 @@
                                             data-id="<?= htmlspecialchars($SQL_Fetch["ID"]) ?>"
                                             data-analysis-date="<?= htmlspecialchars($SQL_Fetch["Analysis_Date"]) ?>"
                                             data-area="<?= htmlspecialchars($SQL_Fetch["Area"]) ?>"
-                                            data-zone-1-machine="<?= htmlspecialchars($SQL_Fetch["Zone_1_Machine"]) ?>"
+                                            data-zone-one-machine="<?= htmlspecialchars($SQL_Fetch["Zone_1_Machine"]) ?>"
                                             data-swab-point="<?= htmlspecialchars($SQL_Fetch["SWAB_Point"]) ?>"
                                             data-tpc="<?= htmlspecialchars($SQL_Fetch["TPC"]) ?>"
                                             data-enterobacteriaceae="<?= htmlspecialchars($SQL_Fetch["Enterobacteriaceae"]) ?>"
@@ -145,7 +146,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="Add_Area" class="form-label">Area</label>
-                                <select class="form-select" aria-label="Add_Area" name="Add_Area" required>
+                                <select class="form-select" id="Add_Area" aria-label="Add_Area" name="Add_Area" required>
                                     <option value="">- Select -</option>
                                     <option value="Process">Process</option>
                                     <option value="Filling">Filling</option>
@@ -153,7 +154,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="Add_Zone_1_Machine" class="form-label">Zone 1 Machine</label>
-                                <select class="form-select" aria-label="Add_Zone_1_Machine" name="Add_Zone_1_Machine" required autofocus>
+                                <select class="form-select" id="Add_Zone_1_Machine" aria-label="Add_Zone_1_Machine" name="Add_Zone_1_Machine" required>
                                     <option value="">- Select -</option>
                                     <option value="A3CF Machine">A3CF Machine</option>
                                     <option value="A3S Machine">A3S Machine</option>
@@ -173,7 +174,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="Add_SWAB_Point" class="form-label">SWAB Point</label>
-                                <select class="form-select" aria-label="Add_SWAB_Point" name="Add_SWAB_Point" required>
+                                <select class="form-select" id="Add_SWAB_Point" aria-label="Add_SWAB_Point" name="Add_SWAB_Point" required>
                                     <option value="">- Select -</option>
                                     <option value="A3CF Line Filter">A3CF Line Filter</option>
                                     <option value="Air Sterilization Valve">Air Sterilization Valve</option>
@@ -289,7 +290,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="Edit_Zone_1_Machine" class="form-label">Zone 1 Machine</label>
-                                <select class="form-select" id="Edit_Zone_1_Machine" aria-label="Edit_Zone_1_Machine" name="Edit_Zone_1_Machine" required autofocus>
+                                <select class="form-select" id="Edit_Zone_1_Machine" aria-label="Edit_Zone_1_Machine" name="Edit_Zone_1_Machine" required>
                                     <option value="">- Select -</option>
                                     <option value="A3CF Machine">A3CF Machine</option>
                                     <option value="A3S Machine">A3S Machine</option>
@@ -391,7 +392,7 @@
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Edit Accounts</button>
+                            <button type="submit" class="btn btn-warning">Edit SWAB Zone 1</button>
                         </div>
                     </form>
                 </div>
@@ -412,10 +413,10 @@
             document.querySelectorAll(".btn-edit").forEach(function (button) {
                 button.addEventListener("click", function () {
                     document.getElementById("Edit_ID").value = this.dataset.id;
-                    document.getElementById("Edit_Analysis_Date").value = this.dataset.analysisdate;
+                    document.getElementById("Edit_Analysis_Date").value = this.dataset.analysisDate;
                     document.getElementById("Edit_Area").value = this.dataset.area;
-                    document.getElementById("Edit_Zone_1_Machine").value = this.dataset.zone1machine;
-                    document.getElementById("Edit_SWAB_Point").value = this.dataset.swabpoint;
+                    document.getElementById("Edit_Zone_1_Machine").value = this.dataset.zoneOneMachine;
+                    document.getElementById("Edit_SWAB_Point").value = this.dataset.swabPoint;
                     document.getElementById("Edit_TPC").value = this.dataset.tpc;
                     document.getElementById("Edit_Enterobacteriaceae").value = this.dataset.enterobacteriaceae;
                     document.getElementById("Edit_Notes").value = this.dataset.notes;

@@ -76,7 +76,7 @@
                             <th scope="col">Password</th>
                             <th scope="col">Name</th>
                             <th scope="col">Access</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -193,7 +193,7 @@
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Edit Accounts</button>
+                            <button type="submit" class="btn btn-warning">Edit Accounts</button>
                         </div>
                     </form>
                 </div>

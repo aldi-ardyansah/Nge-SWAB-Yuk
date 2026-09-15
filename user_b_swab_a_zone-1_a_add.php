@@ -3,14 +3,14 @@
 
     if (
         !isset($_SESSION["NIK"], $_SESSION["Access"]) ||
-        $_SESSION["Access"] !== "Administrator"
+        $_SESSION["Access"] !== "User"
     ) {
         header("Location: index.php");
         exit;
     }
 
     if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-        header("Location: admin_b_swab_a_zone-1.php");
+        header("Location: user_b_swab_a_zone-1.php");
         exit;
     }
 
@@ -31,6 +31,6 @@
         VALUES ('$POST_ID','$POST_Analysis_Date', '$POST_Area', '$POST_Zone_1_Machine', '$POST_SWAB_Point', '$POST_TPC', '$POST_Enterobacteriaceae', '$POST_Notes')"
     );
 
-    header("Location: admin_b_swab_a_zone-1.php");
+    header("Location: user_b_swab_a_zone-1.php");
     exit;
 ?>

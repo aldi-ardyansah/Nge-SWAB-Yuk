@@ -52,9 +52,9 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Zona 1</h5>
+                            <h5 class="card-title">Zone 1</h5>
                             <p class="card-text">Permukaan kontak pangan (kontak langsung), misalnya pipa filling, tangki mixing, dll.</p>
-                            <a href="user_b_swab_a_zona-1.php" class="btn btn-danger">SWAB Zona 1</a>
+                            <a href="user_b_swab_a_zone-1.php" class="btn btn-danger">SWAB Zone 1</a>
                         </div>
                     </div>
                 </div>
@@ -62,9 +62,9 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Zona 2</h5>
+                            <h5 class="card-title">Zone 2</h5>
                             <p class="card-text">Permukaan tidak kontak pangan yang dekat dengan pangan dan permukaan kontak pangan, misalnya bagian luar pipa filling, bagian luar tangki mixing, dll.</p>
-                            <a href="user_b_swab_a_zona-2.php" class="btn btn-warning">SWAB Zona 2</a>
+                            <a href="user_b_swab_a_zone-2.php" class="btn btn-warning">SWAB Zone 2</a>
                         </div>
                     </div>
                 </div>
@@ -72,9 +72,9 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Zona 3</h5>
+                            <h5 class="card-title">Zone 3</h5>
                             <p class="card-text">Permukaan tidak kontak pangan yang jauh di dalam atau dekat area pengolahan, misalnya meja kerja filling dan meja kerja proses.</p>
-                            <a href="user_b_swab_a_zona-3.php" class="btn btn-success">SWAB Zona 3</a>
+                            <a href="user_b_swab_a_zone-3.php" class="btn btn-success">SWAB Zone 3</a>
                         </div>
                     </div>
                 </div>
@@ -82,9 +82,9 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Zona 4</h5>
+                            <h5 class="card-title">Zone 4</h5>
                             <p class="card-text">Permukaan tidak kontak pangan di luar area pengolahan, misalnya loker, kantin, dan kantor.</p>
-                            <a href="user_b_swab_a_zona-4.php" class="btn btn-primary">SWAB Zona 4</a>
+                            <a href="user_b_swab_a_zone-4.php" class="btn btn-primary">SWAB Zone 4</a>
                         </div>
                     </div>
                 </div>
