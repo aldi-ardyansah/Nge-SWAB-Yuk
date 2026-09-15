@@ -16,10 +16,10 @@
 
     require_once("sql_connection.php");
 
-    $POST_NIK = $_POST["NIK"];
-    $POST_Password = $_POST["Password"];
-    $POST_Name = $_POST["Name"];
-    $POST_Access = $_POST["Access"];
+    $POST_NIK = $_POST["Add_NIK"];
+    $POST_Password = $_POST["Add_Password"];
+    $POST_Name = $_POST["Add_Name"];
+    $POST_Access = $_POST["Add_Access"];
 
     mysqli_query(
         $sql_connection,

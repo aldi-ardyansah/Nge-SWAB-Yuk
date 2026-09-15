@@ -131,20 +131,20 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="NIK" class="form-label">NIK</label>
-                                <input type="number" class="form-control" id="NIK" name="NIK" required>
+                                <label for="Add_NIK" class="form-label">NIK</label>
+                                <input type="number" class="form-control" id="Add_NIK" name="Add_NIK" required>
                             </div>
                             <div class="mb-3">
-                                <label for="Password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="Password" name="Password" required>
+                                <label for="Add_Password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="Add_Password" name="Add_Password" required>
                             </div>
                             <div class="mb-3">
-                                <label for="Name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="Name" name="Name" required>
+                                <label for="Add_Name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="Add_Name" name="Add_Name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="Access" class="form-label">Access</label>
-                                <select class="form-select" aria-label="Access" name="Access" required>
+                                <label for="Add_Access" class="form-label">Access</label>
+                                <select class="form-select" aria-label="Add_Access" name="Add_Access" required>
                                     <option value="Administrator">Administrator</option>
                                     <option value="User">User</option>
                                 </select>
@@ -171,20 +171,20 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="Edit_NIK" class="form-label">NIK</label>
-                                <input type="text" class="form-control" id="Edit_NIK" name="NIK" readonly>
+                                <input type="text" class="form-control" id="Edit_NIK" name="Edit_NIK" required readonly>
                             </div>
                             <div class="mb-3">
                                 <label for="Edit_Password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="Edit_Password" name="Password" required>
+                                <input type="password" class="form-control" id="Edit_Password" name="Edit_Password" required>
                             </div>
                             <div class="mb-3">
                                 <label for="Edit_Name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="Edit_Name" name="Name" required>
+                                <input type="text" class="form-control" id="Edit_Name" name="Edit_Name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="Edit_Access" class="form-label">Access</label>
                                 <select class="form-select" id="Edit_Access"
-                                        name="Access" required>
+                                        name="Edit_Access" required>
                                     <option value="Administrator">Administrator</option>
                                     <option value="User">User</option>
                                 </select>
