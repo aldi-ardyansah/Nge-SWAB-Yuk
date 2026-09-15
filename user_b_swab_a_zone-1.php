@@ -175,12 +175,8 @@
                                     <option value="">- Select -</option>
                                     <option value="A3CF Line Filter">A3CF Line Filter</option>
                                     <option value="Air Sterilization Valve">Air Sterilization Valve</option>
-                                    <option value="AS3CF Lower Filling Tube">AS3CF Lower Filling Tube</option>
-                                    <option value="AS3CF Upper Filling Tube">AS3CF Upper Filling Tube</option>
-                                    <option value="AS3peed Line Filter">AS3peed Line Filter</option>
-                                    <option value="AS3S Encluster">AS3S Encluster</option>
-                                    <option value="AS3S Lower Filling Tube">AS3S Lower Filling Tube</option>
-                                    <option value="AS3S Upper Filling Tube">AS3S Upper Filling Tube</option>
+                                    <option value="A3Speed Line Filter">A3Speed Line Filter</option>
+                                    <option value="A3S Encluster">A3S Encluster</option>
                                     <option value="Bulkline Filter">Bulkline Filter</option>
                                     <option value="Cook Silo Tank 1 Sample">Cook Silo Tank 1 Sample</option>
                                     <option value="Cook Silo Tank 2 Sample">Cook Silo Tank 2 Sample</option>
@@ -191,7 +187,7 @@
                                     <option value="Cook T412 Sample">Cook T412 Sample</option>
                                     <option value="Cook T413 Sample">Cook T413 Sample</option>
                                     <option value="Cook T414 Sample">Cook T414 Sample</option>
-                                    <option value="Cream Aseptic Tank T602">Cream Aseptic Tank T602</option>
+                                    <option value="Cream Aseptic Tank (T602)">Cream Aseptic Tank (T602)</option>
                                     <option value="Cream Homogenizer Inlet">Cream Homogenizer Inlet</option>
                                     <option value="Cream Homogenizer Outlet">Cream Homogenizer Outlet</option>
                                     <option value="Cream Sterilizer Balance Tank">Cream Sterilizer Balance Tank</option>
@@ -207,8 +203,9 @@
                                     <option value="Filling Pipe">Filling Pipe</option>
                                     <option value="HI Housing">HI Housing</option>
                                     <option value="HI Nozzle">HI Nozzle</option>
-                                    <option value="Milk Aseptic Tank T601">Milk Aseptic Tank T601</option>
-                                    <option value="Milk Aseptic Tank T603/T604">Milk Aseptic Tank T603/T604</option>
+                                    <option value="Lower Filling Tube">A3CF Lower Filling Tube</option>
+                                    <option value="Milk Aseptic Tank (T601)">Milk Aseptic Tank (T601)</option>
+                                    <option value="Milk Aseptic Tank (T603/T604)">Milk Aseptic Tank (T603/T604)</option>
                                     <option value="Nozzle Side 1.1">Nozzle Side 1.1</option>
                                     <option value="Nozzle Side 1.2">Nozzle Side 1.2</option>
                                     <option value="Nozzle Side 2.1">Nozzle Side 2.1</option>
@@ -232,6 +229,7 @@
                                     <option value="UHT Sterilizer Inlet">UHT Sterilizer Inlet</option>
                                     <option value="UHT Sterilizer Outlet">UHT Sterilizer Outlet</option>
                                     <option value="UHT Temperature Transmitter">UHT Temperature Transmitter</option>
+                                    <option value="Upper Filling Tube">A3CF Upper Filling Tube</option>
                                     <option value="V1">V1</option>
                                     <option value="V2">V2</option>
                                     <option value="V3">V3</option>
@@ -311,12 +309,8 @@
                                     <option value="">- Select -</option>
                                     <option value="A3CF Line Filter">A3CF Line Filter</option>
                                     <option value="Air Sterilization Valve">Air Sterilization Valve</option>
-                                    <option value="AS3CF Lower Filling Tube">AS3CF Lower Filling Tube</option>
-                                    <option value="AS3CF Upper Filling Tube">AS3CF Upper Filling Tube</option>
-                                    <option value="AS3peed Line Filter">AS3peed Line Filter</option>
-                                    <option value="AS3S Encluster">AS3S Encluster</option>
-                                    <option value="AS3S Lower Filling Tube">AS3S Lower Filling Tube</option>
-                                    <option value="AS3S Upper Filling Tube">AS3S Upper Filling Tube</option>
+                                    <option value="A3Speed Line Filter">A3Speed Line Filter</option>
+                                    <option value="A3S Encluster">A3S Encluster</option>
                                     <option value="Bulkline Filter">Bulkline Filter</option>
                                     <option value="Cook Silo Tank 1 Sample">Cook Silo Tank 1 Sample</option>
                                     <option value="Cook Silo Tank 2 Sample">Cook Silo Tank 2 Sample</option>
@@ -327,7 +321,7 @@
                                     <option value="Cook T412 Sample">Cook T412 Sample</option>
                                     <option value="Cook T413 Sample">Cook T413 Sample</option>
                                     <option value="Cook T414 Sample">Cook T414 Sample</option>
-                                    <option value="Cream Aseptic Tank T602">Cream Aseptic Tank T602</option>
+                                    <option value="Cream Aseptic Tank (T602)">Cream Aseptic Tank (T602)</option>
                                     <option value="Cream Homogenizer Inlet">Cream Homogenizer Inlet</option>
                                     <option value="Cream Homogenizer Outlet">Cream Homogenizer Outlet</option>
                                     <option value="Cream Sterilizer Balance Tank">Cream Sterilizer Balance Tank</option>
@@ -343,8 +337,9 @@
                                     <option value="Filling Pipe">Filling Pipe</option>
                                     <option value="HI Housing">HI Housing</option>
                                     <option value="HI Nozzle">HI Nozzle</option>
-                                    <option value="Milk Aseptic Tank T601">Milk Aseptic Tank T601</option>
-                                    <option value="Milk Aseptic Tank T603/T604">Milk Aseptic Tank T603/T604</option>
+                                    <option value="Lower Filling Tube">A3CF Lower Filling Tube</option>
+                                    <option value="Milk Aseptic Tank (T601)">Milk Aseptic Tank (T601)</option>
+                                    <option value="Milk Aseptic Tank (T603/T604)">Milk Aseptic Tank (T603/T604)</option>
                                     <option value="Nozzle Side 1.1">Nozzle Side 1.1</option>
                                     <option value="Nozzle Side 1.2">Nozzle Side 1.2</option>
                                     <option value="Nozzle Side 2.1">Nozzle Side 2.1</option>
@@ -368,6 +363,7 @@
                                     <option value="UHT Sterilizer Inlet">UHT Sterilizer Inlet</option>
                                     <option value="UHT Sterilizer Outlet">UHT Sterilizer Outlet</option>
                                     <option value="UHT Temperature Transmitter">UHT Temperature Transmitter</option>
+                                    <option value="Upper Filling Tube">A3CF Upper Filling Tube</option>
                                     <option value="V1">V1</option>
                                     <option value="V2">V2</option>
                                     <option value="V3">V3</option>
