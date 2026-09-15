@@ -77,7 +77,7 @@
                             <th scope="col">Bulan</th>
                             <th scope="col">Tanggal Analisa</th>
                             <th scope="col">Titik SWAB</th>
-                            <th scope="col">TPC</th>
+                            <th scope="col">TPC (100 CFU/100 cm)</th>
                             <th scope="col">Enterobacteriaceae</th>
                             <th scope="col">Notes</th>
                         </tr>
