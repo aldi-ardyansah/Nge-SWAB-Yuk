@@ -91,8 +91,12 @@
                                 <td><?= htmlspecialchars($SQL_Fetch["Area"]) ?></td>
                                 <td><?= htmlspecialchars($SQL_Fetch["Zone_1_Machine"]) ?></td>
                                 <td><?= htmlspecialchars($SQL_Fetch["SWAB_Point"]) ?></td>
-                                <td><?= htmlspecialchars($SQL_Fetch["TPC"]) ?></td>
-                                <td><?= htmlspecialchars($SQL_Fetch["Enterobacteriaceae"]) ?></td>
+                                <td class="<?= $SQL_Fetch["TPC"] >= 100 ? 'table-danger' : '' ?>">
+                                    <?= htmlspecialchars($SQL_Fetch["TPC"]) ?>
+                                </td>
+                                <td class="<?= $SQL_Fetch["Enterobacteriaceae"] >= 10 ? 'table-danger' : '' ?>">
+                                    <?= htmlspecialchars($SQL_Fetch["Enterobacteriaceae"]) ?>
+                                </td>
                                 <td><?= htmlspecialchars($SQL_Fetch["Notes"]) ?></td>
                                 <td>
                                     <div class="d-flex flex-nowrap gap-1">
@@ -176,66 +180,56 @@
                                 <label for="Add_SWAB_Point" class="form-label">SWAB Point</label>
                                 <select class="form-select" id="Add_SWAB_Point" aria-label="Add_SWAB_Point" name="Add_SWAB_Point" required>
                                     <option value="">- Select -</option>
-                                    <option value="A3CF Line Filter">A3CF Line Filter</option>
-                                    <option value="Air Sterilization Valve">Air Sterilization Valve</option>
-                                    <option value="A3Speed Line Filter">A3Speed Line Filter</option>
-                                    <option value="A3S Encluster">A3S Encluster</option>
-                                    <option value="Bulkline Filter">Bulkline Filter</option>
-                                    <option value="Cook Silo Tank 1 Sample">Cook Silo Tank 1 Sample</option>
-                                    <option value="Cook Silo Tank 2 Sample">Cook Silo Tank 2 Sample</option>
-                                    <option value="Cook Silo Tank 3 Sample">Cook Silo Tank 3 Sample</option>
-                                    <option value="Cook Silo Tank 4 Sample">Cook Silo Tank 4 Sample</option>
-                                    <option value="Cook Silo Tank 5 Sample">Cook Silo Tank 5 Sample</option>
-                                    <option value="Cook T411 Sample">Cook T411 Sample</option>
-                                    <option value="Cook T412 Sample">Cook T412 Sample</option>
-                                    <option value="Cook T413 Sample">Cook T413 Sample</option>
-                                    <option value="Cook T414 Sample">Cook T414 Sample</option>
+                                    <option value="Balance Tank">Balance Tank</option>
                                     <option value="Cream Aseptic Tank (T602)">Cream Aseptic Tank (T602)</option>
-                                    <option value="Cream Homogenizer Inlet">Cream Homogenizer Inlet</option>
-                                    <option value="Cream Homogenizer Outlet">Cream Homogenizer Outlet</option>
-                                    <option value="Cream Sterilizer Balance Tank">Cream Sterilizer Balance Tank</option>
-                                    <option value="Cream Sterilizer Inlet">Cream Sterilizer Inlet</option>
-                                    <option value="Cream Sterilizer Outlet">Cream Sterilizer Outlet</option>
-                                    <option value="Cream Tank">Cream Tank</option>
-                                    <option value="ESL Balance Tank">ESL Balance Tank</option>
-                                    <option value="ESL Homogenizer Inlet">ESL Homogenizer Inlet</option>
-                                    <option value="ESL Homogenizer Outlet">ESL Homogenizer Outlet</option>
-                                    <option value="ESL Sterilizer Filter">ESL Sterilizer Filter</option>
-                                    <option value="ESL Sterilizer Inlet">ESL Sterilizer Inlet</option>
-                                    <option value="ESL Sterilizer Outlet">ESL Sterilizer Outlet</option>
+                                    <option value="Endcluster A3CF">Endcluster A3CF</option>
+                                    <option value="Endcluster A3S">Endcluster A3S</option>
+                                    <option value="Filter Jalur A3CF">Filter Jalur A3CF</option>
+                                    <option value="Filter Jalur A3Speed">Filter Jalur A3Speed</option>
+                                    <option value="Filter Jalur Bulkline">Filter Jalur Bulkline</option>
+                                    <option value="Filter Jalur TT3-1">Filter Jalur TT3-1</option>
+                                    <option value="Filter Jalur TT3-2">Filter Jalur TT3-2</option>
+                                    <option value="Filter Sterilizer">Filter Sterilizer</option>
                                     <option value="Filling Pipe">Filling Pipe</option>
-                                    <option value="HI Housing">HI Housing</option>
-                                    <option value="HI Nozzle">HI Nozzle</option>
-                                    <option value="Lower Filling Tube">A3CF Lower Filling Tube</option>
+                                    <option value="Housing HI">Housing HI</option>
+                                    <option value="Inlet Homogenizer">Inlet Homogenizer</option>
+                                    <option value="Inlet Sterilizer">Inlet Sterilizer</option>
+                                    <option value="Jalur Outline T411">Jalur Outline T411</option>
+                                    <option value="Jalur Outline T412">Jalur Outline T412</option>
+                                    <option value="Jalur Outline T413">Jalur Outline T413</option>
+                                    <option value="Jalur Outline T414">Jalur Outline T414</option>
+                                    <option value="Jalur PHE to Homogenizer">Jalur PHE to Homogenizer</option>
+                                    <option value="Jalur T401 Inlet PHE">Jalur T401 Inlet PHE</option>
+                                    <option value="Jalur T401 Outlet PHE">Jalur T401 Outlet PHE</option>
+                                    <option value="Jalur T402 Inlet PHE">Jalur T402 Inlet PHE</option>
+                                    <option value="Jalur T402 Outlet PHE">Jalur T402 Outlet PHE</option>
+                                    <option value="Lower Filling Tube">Lower Filling Tube</option>
                                     <option value="Milk Aseptic Tank (T601)">Milk Aseptic Tank (T601)</option>
                                     <option value="Milk Aseptic Tank (T603/T604)">Milk Aseptic Tank (T603/T604)</option>
+                                    <option value="Nozzle HI">Nozzle HI</option>
                                     <option value="Nozzle Side 1.1">Nozzle Side 1.1</option>
                                     <option value="Nozzle Side 1.2">Nozzle Side 1.2</option>
                                     <option value="Nozzle Side 2.1">Nozzle Side 2.1</option>
                                     <option value="Nozzle Side 2.2">Nozzle Side 2.2</option>
-                                    <option value="Outline Line T411">Outline Line T411</option>
-                                    <option value="Outline Line T412">Outline Line T412</option>
-                                    <option value="Outline Line T413">Outline Line T413</option>
-                                    <option value="Outline Line T414">Outline Line T414</option>
-                                    <option value="PHE Line to Homogenizer">PHE Line to Homogenizer</option>
-                                    <option value="PHE Outlet to Homogenizer">PHE Outlet to Homogenizer</option>
-                                    <option value="T401 Inlet PHE Line">T401 Inlet PHE Line</option>
-                                    <option value="T401 Outlet PHE Line">T401 Outlet PHE Line</option>
-                                    <option value="T402 Inlet PHE Line">T402 Inlet PHE Line</option>
-                                    <option value="T402 Outlet PHE Line">T402 Outlet PHE Line</option>
-                                    <option value="TT3-1 Line Filter">TT3-1 Line Filter</option>
-                                    <option value="TT3-2 Line Filter">TT3-2 Line Filter</option>
-                                    <option value="UHT Balance Tank">UHT Balance Tank</option>
-                                    <option value="UHT Homogenizer Inlet">UHT Homogenizer Inlet</option>
-                                    <option value="UHT Homogenizer Outlet">UHT Homogenizer Outlet</option>
-                                    <option value="UHT Sterilizer Filter">UHT Sterilizer Filter</option>
-                                    <option value="UHT Sterilizer Inlet">UHT Sterilizer Inlet</option>
-                                    <option value="UHT Sterilizer Outlet">UHT Sterilizer Outlet</option>
-                                    <option value="UHT Temperature Transmitter">UHT Temperature Transmitter</option>
-                                    <option value="Upper Filling Tube">A3CF Upper Filling Tube</option>
+                                    <option value="Outlet Homogenizer">Outlet Homogenizer</option>
+                                    <option value="Outlet PHE to Homogenizer">Outlet PHE to Homogenizer</option>
+                                    <option value="Outlet Sterilizer">Outlet Sterilizer</option>
+                                    <option value="Sample Cook Silo Tank 1">Sample Cook Silo Tank 1</option>
+                                    <option value="Sample Cook Silo Tank 2">Sample Cook Silo Tank 2</option>
+                                    <option value="Sample Cook Silo Tank 3">Sample Cook Silo Tank 3</option>
+                                    <option value="Sample Cook Silo Tank 4">Sample Cook Silo Tank 4</option>
+                                    <option value="Sample Cook Silo Tank 5">Sample Cook Silo Tank 5</option>
+                                    <option value="Sample Cook T411">Sample Cook T411</option>
+                                    <option value="Sample Cook T412">Sample Cook T412</option>
+                                    <option value="Sample Cook T413">Sample Cook T413</option>
+                                    <option value="Sample Cook T414">Sample Cook T414</option>
+                                    <option value="Tank Cream">Tank Cream</option>
+                                    <option value="Temperature Transmitter">Temperature Transmitter</option>
+                                    <option value="Upper Filling Tube">Upper Filling Tube</option>
                                     <option value="V1">V1</option>
                                     <option value="V2">V2</option>
                                     <option value="V3">V3</option>
+                                    <option value="Valve Air Steril">Valve Air Steril</option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -271,8 +265,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="Edit_ID" class="form-label">ID</label>
-                                <input type="text" class="form-control" id="Edit_ID" name="Edit_ID" required readonly>
+                                <input type="text" class="form-control" id="Edit_ID" name="Edit_ID" required hidden>
                             </div>
                             <div class="mb-3">
                                 <label for="Edit_Analysis_Date" class="form-label">Analysis Date</label>
@@ -310,66 +303,56 @@
                                 <label for="Edit_SWAB_Point" class="form-label">SWAB Point</label>
                                 <select class="form-select" id="Edit_SWAB_Point" aria-label="Edit_SWAB_Point" name="Edit_SWAB_Point" required>
                                     <option value="">- Select -</option>
-                                    <option value="A3CF Line Filter">A3CF Line Filter</option>
-                                    <option value="Air Sterilization Valve">Air Sterilization Valve</option>
-                                    <option value="A3Speed Line Filter">A3Speed Line Filter</option>
-                                    <option value="A3S Encluster">A3S Encluster</option>
-                                    <option value="Bulkline Filter">Bulkline Filter</option>
-                                    <option value="Cook Silo Tank 1 Sample">Cook Silo Tank 1 Sample</option>
-                                    <option value="Cook Silo Tank 2 Sample">Cook Silo Tank 2 Sample</option>
-                                    <option value="Cook Silo Tank 3 Sample">Cook Silo Tank 3 Sample</option>
-                                    <option value="Cook Silo Tank 4 Sample">Cook Silo Tank 4 Sample</option>
-                                    <option value="Cook Silo Tank 5 Sample">Cook Silo Tank 5 Sample</option>
-                                    <option value="Cook T411 Sample">Cook T411 Sample</option>
-                                    <option value="Cook T412 Sample">Cook T412 Sample</option>
-                                    <option value="Cook T413 Sample">Cook T413 Sample</option>
-                                    <option value="Cook T414 Sample">Cook T414 Sample</option>
+                                    <option value="Balance Tank">Balance Tank</option>
                                     <option value="Cream Aseptic Tank (T602)">Cream Aseptic Tank (T602)</option>
-                                    <option value="Cream Homogenizer Inlet">Cream Homogenizer Inlet</option>
-                                    <option value="Cream Homogenizer Outlet">Cream Homogenizer Outlet</option>
-                                    <option value="Cream Sterilizer Balance Tank">Cream Sterilizer Balance Tank</option>
-                                    <option value="Cream Sterilizer Inlet">Cream Sterilizer Inlet</option>
-                                    <option value="Cream Sterilizer Outlet">Cream Sterilizer Outlet</option>
-                                    <option value="Cream Tank">Cream Tank</option>
-                                    <option value="ESL Balance Tank">ESL Balance Tank</option>
-                                    <option value="ESL Homogenizer Inlet">ESL Homogenizer Inlet</option>
-                                    <option value="ESL Homogenizer Outlet">ESL Homogenizer Outlet</option>
-                                    <option value="ESL Sterilizer Filter">ESL Sterilizer Filter</option>
-                                    <option value="ESL Sterilizer Inlet">ESL Sterilizer Inlet</option>
-                                    <option value="ESL Sterilizer Outlet">ESL Sterilizer Outlet</option>
+                                    <option value="Endcluster A3CF">Endcluster A3CF</option>
+                                    <option value="Endcluster A3S">Endcluster A3S</option>
+                                    <option value="Filter Jalur A3CF">Filter Jalur A3CF</option>
+                                    <option value="Filter Jalur A3Speed">Filter Jalur A3Speed</option>
+                                    <option value="Filter Jalur Bulkline">Filter Jalur Bulkline</option>
+                                    <option value="Filter Jalur TT3-1">Filter Jalur TT3-1</option>
+                                    <option value="Filter Jalur TT3-2">Filter Jalur TT3-2</option>
+                                    <option value="Filter Sterilizer">Filter Sterilizer</option>
                                     <option value="Filling Pipe">Filling Pipe</option>
-                                    <option value="HI Housing">HI Housing</option>
-                                    <option value="HI Nozzle">HI Nozzle</option>
-                                    <option value="Lower Filling Tube">A3CF Lower Filling Tube</option>
+                                    <option value="Housing HI">Housing HI</option>
+                                    <option value="Inlet Homogenizer">Inlet Homogenizer</option>
+                                    <option value="Inlet Sterilizer">Inlet Sterilizer</option>
+                                    <option value="Jalur Outline T411">Jalur Outline T411</option>
+                                    <option value="Jalur Outline T412">Jalur Outline T412</option>
+                                    <option value="Jalur Outline T413">Jalur Outline T413</option>
+                                    <option value="Jalur Outline T414">Jalur Outline T414</option>
+                                    <option value="Jalur PHE to Homogenizer">Jalur PHE to Homogenizer</option>
+                                    <option value="Jalur T401 Inlet PHE">Jalur T401 Inlet PHE</option>
+                                    <option value="Jalur T401 Outlet PHE">Jalur T401 Outlet PHE</option>
+                                    <option value="Jalur T402 Inlet PHE">Jalur T402 Inlet PHE</option>
+                                    <option value="Jalur T402 Outlet PHE">Jalur T402 Outlet PHE</option>
+                                    <option value="Lower Filling Tube">Lower Filling Tube</option>
                                     <option value="Milk Aseptic Tank (T601)">Milk Aseptic Tank (T601)</option>
                                     <option value="Milk Aseptic Tank (T603/T604)">Milk Aseptic Tank (T603/T604)</option>
+                                    <option value="Nozzle HI">Nozzle HI</option>
                                     <option value="Nozzle Side 1.1">Nozzle Side 1.1</option>
                                     <option value="Nozzle Side 1.2">Nozzle Side 1.2</option>
                                     <option value="Nozzle Side 2.1">Nozzle Side 2.1</option>
                                     <option value="Nozzle Side 2.2">Nozzle Side 2.2</option>
-                                    <option value="Outline Line T411">Outline Line T411</option>
-                                    <option value="Outline Line T412">Outline Line T412</option>
-                                    <option value="Outline Line T413">Outline Line T413</option>
-                                    <option value="Outline Line T414">Outline Line T414</option>
-                                    <option value="PHE Line to Homogenizer">PHE Line to Homogenizer</option>
-                                    <option value="PHE Outlet to Homogenizer">PHE Outlet to Homogenizer</option>
-                                    <option value="T401 Inlet PHE Line">T401 Inlet PHE Line</option>
-                                    <option value="T401 Outlet PHE Line">T401 Outlet PHE Line</option>
-                                    <option value="T402 Inlet PHE Line">T402 Inlet PHE Line</option>
-                                    <option value="T402 Outlet PHE Line">T402 Outlet PHE Line</option>
-                                    <option value="TT3-1 Line Filter">TT3-1 Line Filter</option>
-                                    <option value="TT3-2 Line Filter">TT3-2 Line Filter</option>
-                                    <option value="UHT Balance Tank">UHT Balance Tank</option>
-                                    <option value="UHT Homogenizer Inlet">UHT Homogenizer Inlet</option>
-                                    <option value="UHT Homogenizer Outlet">UHT Homogenizer Outlet</option>
-                                    <option value="UHT Sterilizer Filter">UHT Sterilizer Filter</option>
-                                    <option value="UHT Sterilizer Inlet">UHT Sterilizer Inlet</option>
-                                    <option value="UHT Sterilizer Outlet">UHT Sterilizer Outlet</option>
-                                    <option value="UHT Temperature Transmitter">UHT Temperature Transmitter</option>
-                                    <option value="Upper Filling Tube">A3CF Upper Filling Tube</option>
+                                    <option value="Outlet Homogenizer">Outlet Homogenizer</option>
+                                    <option value="Outlet PHE to Homogenizer">Outlet PHE to Homogenizer</option>
+                                    <option value="Outlet Sterilizer">Outlet Sterilizer</option>
+                                    <option value="Sample Cook Silo Tank 1">Sample Cook Silo Tank 1</option>
+                                    <option value="Sample Cook Silo Tank 2">Sample Cook Silo Tank 2</option>
+                                    <option value="Sample Cook Silo Tank 3">Sample Cook Silo Tank 3</option>
+                                    <option value="Sample Cook Silo Tank 4">Sample Cook Silo Tank 4</option>
+                                    <option value="Sample Cook Silo Tank 5">Sample Cook Silo Tank 5</option>
+                                    <option value="Sample Cook T411">Sample Cook T411</option>
+                                    <option value="Sample Cook T412">Sample Cook T412</option>
+                                    <option value="Sample Cook T413">Sample Cook T413</option>
+                                    <option value="Sample Cook T414">Sample Cook T414</option>
+                                    <option value="Tank Cream">Tank Cream</option>
+                                    <option value="Temperature Transmitter">Temperature Transmitter</option>
+                                    <option value="Upper Filling Tube">Upper Filling Tube</option>
                                     <option value="V1">V1</option>
                                     <option value="V2">V2</option>
                                     <option value="V3">V3</option>
+                                    <option value="Valve Air Steril">Valve Air Steril</option>
                                 </select>
                             </div>
                             <div class="mb-3">
