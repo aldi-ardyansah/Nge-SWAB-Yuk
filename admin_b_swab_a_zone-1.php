@@ -91,10 +91,11 @@
                                 <td><?= htmlspecialchars($SQL_Fetch["Area"]) ?></td>
                                 <td><?= htmlspecialchars($SQL_Fetch["Zone_1_Machine"]) ?></td>
                                 <td><?= htmlspecialchars($SQL_Fetch["SWAB_Point"]) ?></td>
-                                <td class="<?= $SQL_Fetch["TPC"] >= 100 ? 'table-danger' : '' ?>">
+                                <td class="<?= $SQL_Fetch["TPC"] < 100 ? 'table-success' : 'table-danger' ?>">
                                     <?= htmlspecialchars($SQL_Fetch["TPC"]) ?>
                                 </td>
-                                <td class="<?= $SQL_Fetch["Enterobacteriaceae"] >= 10 ? 'table-danger' : '' ?>">
+
+                                <td class="<?= $SQL_Fetch["Enterobacteriaceae"] < 10 ? 'table-success' : 'table-danger' ?>">
                                     <?= htmlspecialchars($SQL_Fetch["Enterobacteriaceae"]) ?>
                                 </td>
                                 <td><?= htmlspecialchars($SQL_Fetch["Notes"]) ?></td>
